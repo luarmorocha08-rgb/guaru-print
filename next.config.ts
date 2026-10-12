@@ -10,8 +10,6 @@ const supabaseHost = (() => {
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // Projeto independente dentro do repositório: fixa a raiz do Turbopack aqui.
-  turbopack: { root: process.cwd() },
   poweredByHeader: false,
   images: {
     formats: ["image/avif", "image/webp"],

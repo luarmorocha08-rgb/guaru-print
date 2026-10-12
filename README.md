@@ -1,10 +1,8 @@
 # Guaru Print — website
 
 Site da **Guaru Print**, gráfica rápida e comunicação visual em Guarujá/SP.
-Projeto Next.js independente: ele fica nesta pasta (`guaru-print/`) e não interfere no site da J.A Odontologia, que está na raiz do repositório.
 
 ```bash
-cd guaru-print
 npm install
 cp .env.example .env.local   # opcional: o site roda sem nenhuma variável
 npm run dev                  # http://localhost:3000
@@ -47,6 +45,10 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · GSAP + Sc
 - Respostas de FAQ que dependem da política da empresa (criação de arte, instalação) estão marcadas como `pending` e pedem confirmação pelo WhatsApp.
 - As imagens são ilustrações vetoriais próprias (`src/components/ui/Illustration.tsx`), sem arquivos de terceiros. Fotos reais entram pelo painel.
 - O logotipo é tipográfico (`src/components/ui/Logo.tsx`). Troque-o pelo vetor oficial quando ele estiver disponível.
+
+## Deploy na Vercel
+
+Importe este repositório em vercel.com → "Add New → Project" e clique em Deploy. O framework (Next.js) é detectado automaticamente. Configure as variáveis abaixo em Settings → Environment Variables (nenhuma é obrigatória).
 
 ## Variáveis de ambiente
 
